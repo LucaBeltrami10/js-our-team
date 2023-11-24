@@ -1,0 +1,9 @@
+.my_container{
+    width: 800px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.my_container div.card{
+    width: calc(100% / 3);
+}
