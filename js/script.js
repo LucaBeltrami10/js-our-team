@@ -37,15 +37,17 @@ const teamMembers = [
 for (let i = 0; i<teamMembers.length; i++){
     console.log(`Member n.${i + 1}. Name: ${teamMembers[i].name}, Role: ${teamMembers[i].role}, Link to profile photo: ${teamMembers[i].profilePicture}`)
 
-    teamMembersContainer.innerHTML = `
-    <div class="card border-0 rounded-0">
-        <img src="./img/wayne-barnett-founder-ceo.jpg" class="profile-picture" alt="...">
-        <div class="card-body text-center">
-            <p class="members-name fw-bold m-0">gennaro</p>
-            <p class="members-role m-0">pizzaiolo</p>
-        </div>
+    let newCard = document.createElement('div')
+    newCard.classList.add('card', 'border-0', 'rounded-0')
+    newCard.innerHTML = `
+    <img src="./img/${teamMembers[i].profilePicture}" class="profile-picture" alt="${teamMembers[i].name} profile photo">
+    <div class="card-body text-center">
+        <p class="members-name fw-bold m-0">${teamMembers[i].name}</p>
+        <p class="members-role m-0">${teamMembers[i].role}</p>
     </div>
     `
+    
+    teamMembersContainer.appendChild(newCard)
 }
 
 
@@ -66,8 +68,9 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 <div class="card border-0 rounded-0">
     <img src="./img/wayne-barnett-founder-ceo.jpg" class="profile-picture" alt="...">
     <div class="card-body text-center">
-        <p class="members-name fw-bold m-0">gennaro</p>
-        <p class="members-role m-0">pizzaiolo</p>
+        <p class="members-name fw-bold m-0"></p>
+        <p class="members-role m-0"></p>
     </div>
 </div>
 */
+
