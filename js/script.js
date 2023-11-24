@@ -32,7 +32,7 @@ const teamMembers = [
 ]
 
 for (let i = 0; i<teamMembers.length; i++){
-    console.log(`Member n. ${i + 1}. Name: ${teamMembers[i].name}, Role: ${teamMembers[i].role}, Link to profile photo: ${teamMembers[i].profilePicture}`)
+    console.log(`Member n.${i + 1}. Name: ${teamMembers[i].name}, Role: ${teamMembers[i].role}, Link to profile photo: ${teamMembers[i].profilePicture}`)
 }
 
 
