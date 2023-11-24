@@ -1,3 +1,6 @@
+const teamMembersContainer = document.querySelector('main div.container-fluid div.my_container')
+
+
 const teamMembers = [
     {
         'name' : 'Wayne Barnett',
